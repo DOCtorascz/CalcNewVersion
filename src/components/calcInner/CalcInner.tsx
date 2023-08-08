@@ -21,7 +21,7 @@ function CalcInner() {
                 <CalcBt classN={'main-calc__parametrs-num__bt btn'} options={1} />
                 <CalcBt classN={'main-calc__parametrs-num__bt btn'} options={2} />
                 <CalcBt classN={'main-calc__parametrs-num__bt btn'} options={3} />
-              </div>
+              </div> 
               <div className="main-calc__parametrs-num__two-row row">
                 <CalcBt classN={'main-calc__parametrs-num__bt btn'} options={4} />
                 <CalcBt classN={'main-calc__parametrs-num__bt btn'} options={5} />
