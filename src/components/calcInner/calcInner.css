@@ -1,0 +1,110 @@
+.main-calc {
+  padding-top: 20%;
+  transform: translate(0, -20%);
+}
+
+.container {
+  max-width: 359px;
+  margin: 0 auto;
+}
+
+.main-calc__inner {
+  padding: 10px;
+  background: black;
+  border: 1px solid #272727;
+  border-radius: 13px;
+}
+
+.main-calc__result {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  min-height: 125px;
+  border-bottom: 1px solid rgb(255 255 255);
+  background: repeating-linear-gradient(4deg, #244d00, #063511 20px);
+  animation-name: bgFail;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  padding: 10px;
+}
+
+@keyframes bgFail {
+  0% {
+    background: repeating-linear-gradient(4deg, #244d00, #063511 20px);
+  }
+
+  50% {
+    background: repeating-linear-gradient(24deg, #244d00, #063511 50px);
+  }
+
+  100% {
+    background: repeating-linear-gradient(54deg, #244d00, #063511 20px);
+  }
+}
+
+.main-calc__result-num {
+  font-size: 40px;
+  color: #ffffff;
+}
+
+.main-calc__parametrs {
+  display: flex;
+  justify-content: space-between;
+  background: black;
+}
+
+.main-calc__parametrs-num {
+  flex-basis: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 5px;
+  padding-top: 5px;
+  align-items: center;
+}
+
+.btn {
+  padding: 18px;
+  border-radius: 35%;
+  border: 1px solid transparent;
+  transition: 2s;
+  font-size: 20px;
+}
+
+.main-calc__parametrs-num__bt {
+  background: linear-gradient(133deg, #956f6f, #815050);
+  margin-right: 10px;
+}
+
+.main-calc__parametrs-num__bt:nth-child(1),
+.main-calc__parametrs-num__bt:nth-child(2),
+.main-calc__parametrs-num__bt:nth-child(3) {
+  background: linear-gradient(133deg, #956f6f, #ff1e1eb5);
+  margin-right: 10px;
+}
+
+.main-calc__parametrs-num__bt:nth-child(3) {
+  margin-right: 0;
+}
+
+.btn:hover {
+  transition: 1s;
+  border: 1px solid white;
+  background: linear-gradient(133deg, #adadad, #8b7955);
+}
+
+.main-calc__parametrs-base {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-calc__parametrs-base__bt {
+  background: linear-gradient(133deg, #adadadab, #ffb11e);
+  margin-top: 5px;
+}
+
+.row .btn {
+  font-size: 20px;
+}
